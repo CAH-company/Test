@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
+import { ContactForm } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: "Kontakt — Buddy's Events | Umów rozmowę o Twoim evencie",
-  description: 'Skontaktuj się z Buddy\'s Events. Telefon: +48 503 455 846. Email: marta@buddys-events.pl. Organizujemy eventy w całej Polsce.',
+  description:
+    "Skontaktuj się z Buddy's Events. Telefon: +48 503 455 846. Email: marta@buddys-events.pl. Organizujemy eventy w całej Polsce.",
+  alternates: { canonical: 'https://buddys-events.pl/kontakt' },
 }
 
 export default function KontaktPage() {
@@ -69,95 +72,7 @@ export default function KontaktPage() {
 
             {/* Right column — form */}
             <div>
-              <form className="bg-burgundy-700/50 backdrop-blur rounded-2xl p-8 lg:p-10 space-y-6 border border-burgundy-600/30">
-                <h2 className="text-2xl font-bold font-display mb-2">Wyślij zapytanie</h2>
-                <p className="text-cream-300 text-sm mb-4">Wypełnij formularz — odezwiemy się w ciągu 24h.</p>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Imię *</label>
-                    <input type="text" required className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="Jan" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Nazwisko</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="Kowalski" />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-cream-200 mb-1.5">Firma *</label>
-                  <input type="text" required className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="Nazwa firmy" />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-cream-200 mb-1.5">Email *</label>
-                  <input type="email" required className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="jan@firma.pl" />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-cream-200 mb-1.5">Telefon</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="+48 XXX XXX XXX" />
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Typ eventu</label>
-                    <select className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none">
-                      <option value="">Wybierz...</option>
-                      <option value="integracja">Integracja / team building</option>
-                      <option value="konferencja">Konferencja / szkolenie</option>
-                      <option value="beauty">Event beauty / wizerunkowy</option>
-                      <option value="piknik">Piknik firmowy / rodzinny</option>
-                      <option value="gala">Wigilia / gala / bankiet</option>
-                      <option value="otwarcie">Otwarcie / premiera</option>
-                      <option value="inne">Inne</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Szacowana liczba osób</label>
-                    <select className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none">
-                      <option value="">Wybierz...</option>
-                      <option value="50">Do 50 osób</option>
-                      <option value="100">50–100 osób</option>
-                      <option value="300">100–300 osób</option>
-                      <option value="500">300–500 osób</option>
-                      <option value="1000">500–1000 osób</option>
-                      <option value="1000+">Powyżej 1000 osób</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Planowany termin</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="np. wrzesień 2026" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-cream-200 mb-1.5">Szacowany budżet</label>
-                    <select className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none">
-                      <option value="">Wybierz...</option>
-                      <option value="50k">Do 50 000 zł</option>
-                      <option value="100k">50 000 – 100 000 zł</option>
-                      <option value="200k">100 000 – 200 000 zł</option>
-                      <option value="200k+">Powyżej 200 000 zł</option>
-                      <option value="idk">Nie wiem jeszcze</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-cream-200 mb-1.5">Wiadomość</label>
-                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none resize-none" placeholder="Opowiedz w skrócie o swoim evencie — cel, lokalizacja, specjalne wymagania..." />
-                </div>
-
-                <button type="submit" className="w-full btn-primary text-base !py-4">
-                  Wyślij zapytanie
-                </button>
-
-                <p className="text-xs text-cream-300/60 text-center">
-                  Bez spamu, bez automatycznych maili. Odpowiadamy osobiście w ciągu 24h.
-                </p>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

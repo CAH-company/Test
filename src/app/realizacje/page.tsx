@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: "Realizacje — Buddy's Events | Case Study eventów firmowych",
   description: 'Zobacz nasze realizacje: eventy dla 50–1500 osób. Benefit Systems, OnlyBio, NEUCA, Cordia, Marsh, Stonex. 9 szczegółowych case study.',
+  alternates: { canonical: 'https://buddys-events.pl/realizacje' },
 }
 
 const industryColors: Record<string, string> = {

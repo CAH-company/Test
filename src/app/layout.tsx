@@ -2,18 +2,91 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
+
+const SITE_URL = 'https://buddys-events.pl'
 
 export const metadata: Metadata = {
-  title: "Buddy's Events — Agencja eventowa | Integracje, konferencje, eventy beauty",
-  description: 'Organizujemy eventy dla firm od 50 do 1500 osób. Benefit Systems, OnlyBio, NEUCA — zobacz nasze realizacje. Jedna umowa, zero stresu.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Buddy's Events — Agencja eventowa | Integracje, konferencje, eventy beauty",
+    template: "%s | Buddy's Events",
+  },
+  description:
+    'Organizujemy eventy dla firm od 50 do 1500 osób. Benefit Systems, OnlyBio, NEUCA — zobacz nasze realizacje. Jedna umowa, zero stresu.',
+  keywords: [
+    'agencja eventowa',
+    'organizacja eventów',
+    'eventy firmowe',
+    'team building',
+    'integracje firmowe',
+    'konferencje',
+    'pikniki firmowe',
+    'eventy beauty',
+    'Warszawa',
+    'Polska',
+  ],
+  authors: [{ name: "Buddy's Events", url: SITE_URL }],
+  creator: "Buddy's Events",
+  publisher: "Buddy's Events",
+  alternates: {
+    canonical: SITE_URL,
+    languages: { 'pl-PL': SITE_URL },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "Buddy's Events — Agencja eventowa",
     description: 'Organizujemy eventy dla firm od 50 do 1500 osób. Jedna umowa, zero stresu.',
-    url: 'https://buddys-events.pl',
+    url: SITE_URL,
     siteName: "Buddy's Events",
     locale: 'pl_PL',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Buddy's Events — Agencja eventowa",
+    description: 'Organizujemy eventy dla firm od 50 do 1500 osób. Jedna umowa, zero stresu.',
+    site: '@buddysevents',
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? undefined,
+  },
+}
+
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'EventPlanningService',
+  name: "Buddy's Events",
+  description:
+    'Agencja eventowa organizująca eventy firmowe dla 50–1500 osób w całej Polsce. Integracje, konferencje, pikniki, eventy beauty.',
+  url: SITE_URL,
+  telephone: '+48503455846',
+  email: 'marta@buddys-events.pl',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Warszawa',
+    addressCountry: 'PL',
+  },
+  areaServed: {
+    '@type': 'Country',
+    name: 'Poland',
+  },
+  priceRange: '$$',
+  sameAs: [
+    'https://instagram.com/buddysevents',
+    'https://www.facebook.com/buddysevents',
+    'https://www.linkedin.com/company/buddys-events',
+  ],
 }
 
 export default function RootLayout({
@@ -23,7 +96,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+      </head>
       <body className="bg-cream-50 text-gray-900 antialiased">
+        <GoogleAnalytics />
         <Navbar />
         <main>{children}</main>
         <Footer />
