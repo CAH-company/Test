@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { caseStudies } from '@/data/caseStudies'
+import { ContactForm } from '@/components/ContactForm'
 
 /* ─── SECTION 1: HERO ─── */
 function Hero() {
@@ -489,58 +490,7 @@ function CTASection() {
           </div>
 
           {/* Contact form */}
-          <form className="bg-burgundy-700/50 backdrop-blur rounded-2xl p-8 space-y-5 border border-burgundy-600/30">
-            <div className="grid sm:grid-cols-2 gap-5">
-              <div>
-                <label className="block text-sm font-medium text-cream-200 mb-1.5">Imię</label>
-                <input type="text" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="Jan" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-cream-200 mb-1.5">Firma</label>
-                <input type="text" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="Nazwa firmy" />
-              </div>
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-cream-200 mb-1.5">Email</label>
-              <input type="email" className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" placeholder="jan@firma.pl" />
-            </div>
-            <div className="grid sm:grid-cols-2 gap-5">
-              <div>
-                <label className="block text-sm font-medium text-cream-200 mb-1.5">Typ eventu</label>
-                <select className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none appearance-none">
-                  <option value="">Wybierz...</option>
-                  <option value="integracja">Integracja / team building</option>
-                  <option value="konferencja">Konferencja / szkolenie</option>
-                  <option value="beauty">Event beauty / wizerunkowy</option>
-                  <option value="piknik">Piknik firmowy / rodzinny</option>
-                  <option value="gala">Wigilia / gala / bankiet</option>
-                  <option value="otwarcie">Otwarcie / premiera</option>
-                  <option value="inne">Inne</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-cream-200 mb-1.5">Szacowany budżet</label>
-                <select className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none appearance-none">
-                  <option value="">Wybierz...</option>
-                  <option value="50k">Do 50 000 zł</option>
-                  <option value="100k">50 000 – 100 000 zł</option>
-                  <option value="200k">100 000 – 200 000 zł</option>
-                  <option value="200k+">Powyżej 200 000 zł</option>
-                  <option value="idk">Nie wiem jeszcze</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-cream-200 mb-1.5">Wiadomość</label>
-              <textarea rows={3} className="w-full px-4 py-3 rounded-xl bg-burgundy-800/60 border border-burgundy-600/40 text-white placeholder:text-cream-300/50 focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none resize-none" placeholder="Opowiedz w skrócie o swoim evencie..." />
-            </div>
-            <button type="submit" className="w-full btn-primary text-base !py-4">
-              Wyślij zapytanie
-            </button>
-            <p className="text-xs text-cream-300/60 text-center">
-              Odpowiadamy w ciągu 24h. Bez spamu, bez automatycznych maili.
-            </p>
-          </form>
+          <ContactForm compact />
         </div>
       </div>
     </section>

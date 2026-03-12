@@ -14,6 +14,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${cs.title} — Case Study | Buddy's Events`,
     description: `${cs.eventType} dla ${cs.isAnonymous ? cs.anonymousLabel : cs.client}. ${cs.attendees} uczestników. ${cs.challenge.slice(0, 120)}`,
+    alternates: { canonical: `https://buddys-events.pl/realizacje/${cs.slug}` },
   }
 }
 
