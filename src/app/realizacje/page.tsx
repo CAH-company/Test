@@ -38,14 +38,13 @@ export default function RealizacjePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((cs) => (
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
-                <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full flex flex-col">
-                  {/* Image placeholder */}
-                  <div className="aspect-[16/10] bg-burgundy-100 flex items-center justify-center">
+                <article className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 h-full flex flex-col">
+                  {/* Image - explicitly rounded-t-3xl + overflow-hidden */}
+                  <div className="aspect-[16/10] bg-burgundy-100 rounded-t-3xl overflow-hidden flex items-center justify-center">
                     <p className="text-burgundy-400 text-sm px-4 text-center">[ ZDJĘCIE: {cs.client} ]</p>
                   </div>
 
                   <div className="p-6 flex flex-col flex-1">
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2 mb-3">
                       <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${industryColors[cs.industryTag] || 'bg-gray-100 text-gray-700'}`}>
                         {cs.industry.split('/')[0].trim()}
@@ -55,20 +54,16 @@ export default function RealizacjePage() {
                       </span>
                     </div>
 
-                    {/* Title */}
                     <h2 className="text-lg font-bold font-display text-burgundy-800 mb-2 group-hover:text-rose-600 transition-colors">
                       {cs.isAnonymous ? cs.anonymousLabel : cs.client}
                     </h2>
 
-                    {/* Event type */}
                     <p className="text-sm text-gray-500 mb-3">{cs.eventType}</p>
 
-                    {/* Challenge snippet */}
                     <p className="text-sm text-gray-600 mb-4 flex-1">
                       {cs.challenge.slice(0, 120)}...
                     </p>
 
-                    {/* CTA */}
                     <span className="inline-flex items-center text-sm font-semibold text-rose-600 group-hover:text-rose-700">
                       Czytaj case study <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
                     </span>
