@@ -24,7 +24,7 @@ const bgMap: Record<string, string> = {
 }
 
 const fillMap: Record<string, string> = {
-  dark: '#6B1530',
+  dark: '#4A0E23',
   light: '#ffffff',
   cream: '#FDFAF8',
   white: '#ffffff',

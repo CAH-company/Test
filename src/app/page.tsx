@@ -7,7 +7,7 @@ import { WaveDivider } from '@/components/WaveDivider'
 /* ─── SECTION 1: HERO ─── */
 function Hero() {
   return (
-    <section className="relative gradient-burgundy text-white pt-28 pb-0 lg:pt-36 lg:pb-0 overflow-hidden">
+    <section className="relative bg-burgundy-800 text-white pt-28 pb-0 lg:pt-36 lg:pb-0 overflow-hidden">
       <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-rose-600/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-600/5 rounded-full blur-3xl" />
 
@@ -334,7 +334,7 @@ function USP() {
   ]
 
   return (
-    <section className="pt-20 lg:pt-28 pb-0 gradient-burgundy text-white overflow-hidden">
+    <section className="pt-20 lg:pt-28 pb-0 bg-burgundy-800 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold font-display text-white mb-4">
@@ -430,7 +430,7 @@ const contacts = [
 
 function CTASection() {
   return (
-    <section className="py-20 lg:py-28 gradient-burgundy text-white">
+    <section className="py-20 lg:py-28 bg-burgundy-800 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
