@@ -16,10 +16,8 @@ interface WaveDividerProps {
   flip?: boolean
 }
 
-const gradientBurgundy = 'linear-gradient(135deg, #4A0E23 0%, #6B1530 50%, #3D0C1C 100%)'
-
 const bgMap: Record<string, string> = {
-  dark: gradientBurgundy,
+  dark: '#3D0C1C',
   light: '#ffffff',
   cream: '#FDFAF8',
   white: '#ffffff',
