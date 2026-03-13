@@ -44,7 +44,7 @@ export function Navbar() {
             >
               Realizacje
             </Link>
-            <Link href="/kontakt" className="btn-primary text-sm !py-2.5 !px-6">
+            <Link href="/#kontakt" className="btn-primary text-sm !py-2.5 !px-6">
               Umów rozmowę
             </Link>
           </div>
@@ -76,7 +76,7 @@ export function Navbar() {
               Realizacje
             </Link>
             <Link
-              href="/kontakt"
+              href="/#kontakt"
               onClick={() => setIsOpen(false)}
               className="block btn-primary text-center text-sm !py-2.5"
             >
