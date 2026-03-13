@@ -7,10 +7,9 @@ import { WaveDivider } from '@/components/WaveDivider'
 /* ─── SECTION 1: HERO ─── */
 function Hero() {
   return (
-    <div>
-      <section className="relative gradient-burgundy text-white pt-28 pb-8 lg:pt-36 lg:pb-10 overflow-hidden">
-        <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-rose-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-600/5 rounded-full blur-3xl" />
+    <section className="relative gradient-burgundy text-white pt-28 pb-0 lg:pt-36 lg:pb-0 overflow-hidden">
+      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-rose-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-600/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -57,9 +56,8 @@ function Hero() {
             ))}
           </div>
         </div>
-      </section>
       <WaveDivider from="dark" to="white" />
-    </div>
+    </section>
   )
 }
 
@@ -336,33 +334,31 @@ function USP() {
   ]
 
   return (
-    <div>
-      <section className="py-20 lg:py-28 gradient-burgundy text-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-extrabold font-display text-white mb-4">
-              Co dostaniesz, czego nie daje Ci typowa agencja
-            </h2>
-            <p className="text-cream-300 max-w-2xl mx-auto">
-              Pracujemy inaczej. Oto co sprawia, że nasi klienci wracają do nas rok po roku.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {usps.map((usp) => (
-              <div key={usp.title} className="bg-burgundy-800/50 rounded-2xl p-6 border border-burgundy-700/40 hover:border-rose-500/40 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-rose-400 text-base mt-0.5 flex-shrink-0">✦</span>
-                  <h3 className="text-base font-bold font-display text-white leading-snug">{usp.title}</h3>
-                </div>
-                <p className="text-cream-300 text-sm leading-relaxed ml-6">{usp.desc}</p>
-              </div>
-            ))}
-          </div>
+    <section className="pt-20 lg:pt-28 pb-0 gradient-burgundy text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold font-display text-white mb-4">
+            Co dostaniesz, czego nie daje Ci typowa agencja
+          </h2>
+          <p className="text-cream-300 max-w-2xl mx-auto">
+            Pracujemy inaczej. Oto co sprawia, że nasi klienci wracają do nas rok po roku.
+          </p>
         </div>
-      </section>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {usps.map((usp) => (
+            <div key={usp.title} className="bg-burgundy-800/50 rounded-2xl p-6 border border-burgundy-700/40 hover:border-rose-500/40 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="text-rose-400 text-base mt-0.5 flex-shrink-0">✦</span>
+                <h3 className="text-base font-bold font-display text-white leading-snug">{usp.title}</h3>
+              </div>
+              <p className="text-cream-300 text-sm leading-relaxed ml-6">{usp.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       <WaveDivider from="dark" to="cream" />
-    </div>
+    </section>
   )
 }
 
