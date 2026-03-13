@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://buddys-events.pl/kontakt' },
 }
 
+const contacts = [
+  { name: 'Marta', phone: '+48 503 455 846', email: 'marta@buddys-events.pl', hours: 'pon–pt, 9:00–17:00' },
+  { name: 'Rafał', phone: '+48 XXX XXX XXX', email: 'rafal@buddys-events.pl', hours: 'pon–pt, 9:00–17:00' },
+  { name: 'XYZ', phone: '+48 XXX XXX XXX', email: 'xyz@buddys-events.pl', hours: 'pon–pt, 9:00–17:00' },
+]
+
 export default function KontaktPage() {
   return (
     <div className="pt-20 lg:pt-24">
@@ -25,29 +31,28 @@ export default function KontaktPage() {
               </p>
 
               <div className="space-y-6 mb-10">
-                <div className="flex items-start gap-4">
-                  <span className="w-12 h-12 rounded-xl bg-burgundy-700 flex items-center justify-center text-xl flex-shrink-0">📞</span>
-                  <div>
-                    <div className="text-sm text-cream-300 mb-1">Zadzwoń</div>
-                    <a href="tel:+48503455846" className="text-xl font-bold text-rose-400 hover:text-rose-300 transition-colors">
-                      +48 503 455 846
-                    </a>
-                    <p className="text-cream-300 text-sm mt-1">Marta — pon–pt, 9:00–17:00</p>
+                {contacts.map((c) => (
+                  <div key={c.name} className="flex items-start gap-4">
+                    <span className="w-12 h-12 rounded-xl bg-burgundy-700 flex items-center justify-center text-lg font-bold text-rose-300 flex-shrink-0">
+                      {c.name[0]}
+                    </span>
+                    <div>
+                      <div className="font-bold text-white mb-0.5">{c.name}</div>
+                      <div className="flex flex-wrap gap-x-3 gap-y-0.5 mb-1">
+                        <a href={`tel:${c.phone.replace(/\s/g, '')}`} className="text-rose-400 hover:text-rose-300 transition-colors font-semibold">
+                          {c.phone}
+                        </a>
+                        <span className="text-burgundy-500">·</span>
+                        <a href={`mailto:${c.email}`} className="text-rose-400 hover:text-rose-300 transition-colors font-semibold">
+                          {c.email}
+                        </a>
+                      </div>
+                      <p className="text-cream-300 text-sm">{c.hours}</p>
+                    </div>
                   </div>
-                </div>
+                ))}
 
-                <div className="flex items-start gap-4">
-                  <span className="w-12 h-12 rounded-xl bg-burgundy-700 flex items-center justify-center text-xl flex-shrink-0">✉️</span>
-                  <div>
-                    <div className="text-sm text-cream-300 mb-1">Napisz</div>
-                    <a href="mailto:marta@buddys-events.pl" className="text-xl font-bold text-rose-400 hover:text-rose-300 transition-colors">
-                      marta@buddys-events.pl
-                    </a>
-                    <p className="text-cream-300 text-sm mt-1">Odpowiadamy w ciągu 24h</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 pt-2">
                   <span className="w-12 h-12 rounded-xl bg-burgundy-700 flex items-center justify-center text-xl flex-shrink-0">📍</span>
                   <div>
                     <div className="text-sm text-cream-300 mb-1">Siedziba</div>

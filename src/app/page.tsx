@@ -33,7 +33,7 @@ function Hero() {
 
           {/* Hero visual — placeholder for video/image */}
           <div className="relative hidden lg:block">
-            <div className="aspect-[4/3] rounded-2xl bg-burgundy-700/50 border border-burgundy-600/30 overflow-hidden flex items-center justify-center">
+            <div className="aspect-[4/3] rounded-3xl bg-burgundy-700/50 border border-burgundy-600/30 overflow-hidden flex items-center justify-center">
               <div className="text-center p-8">
                 <p className="text-cream-300 text-sm mb-2">[ HERO VIDEO / ZDJĘCIE ]</p>
                 <p className="text-cream-200/60 text-xs">Montaż z eventów: Benefit Systems 1500 os., meduzy Ocean, OnlyBio Wedel, Cordia kajaki</p>
@@ -95,18 +95,18 @@ function Segments() {
       caseStudySlug: 'onlybio-wedel',
     },
     {
+      icon: '🏢',
+      title: 'Korporacyjna & Biznesowa',
+      items: ['Integracje dla 1500+ osób', 'Eventy ogólnofirmowe', 'Konferencje i gale', 'Firmowe wigilie i pikniki'],
+      caseStudy: 'Benefit Systems — 1 500 uczestników',
+      caseStudySlug: 'benefit-systems',
+    },
+    {
       icon: '🏗️',
       title: 'Deweloperska & Budowlana',
       items: ['Integracje po fuzjach', 'Otwarcia inwestycji i biur', 'Pikniki dla pracowników', 'Wigilie firmowe'],
       caseStudy: 'Cordia — integracja po fuzji',
       caseStudySlug: 'cordia-integracja',
-    },
-    {
-      icon: '💊',
-      title: 'Farmaceutyczna & Health',
-      items: ['Konferencje ogólnopolskie', 'Cykliczne pikniki rodzinne', 'Integracje dla tysięcy', 'Spotkania partnerów'],
-      caseStudy: 'NEUCA — 14 lat współpracy',
-      caseStudySlug: 'neuca-pikniki',
     },
   ]
 
@@ -124,7 +124,7 @@ function Segments() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {segments.map((seg) => (
-            <div key={seg.title} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+            <div key={seg.title} className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
               <div className="text-4xl mb-4">{seg.icon}</div>
               <h3 className="text-xl font-bold font-display text-burgundy-800 mb-4">{seg.title}</h3>
               <ul className="space-y-2 mb-6">
@@ -234,9 +234,9 @@ function FeaturedCaseStudies() {
         {/* Main featured */}
         <div className="mb-10">
           <Link href={`/realizacje/${featured[0].slug}`} className="block group">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
               <div className="grid lg:grid-cols-2">
-                <div className="aspect-[16/10] bg-burgundy-100 flex items-center justify-center">
+                <div className="aspect-[16/10] bg-burgundy-100 rounded-tl-3xl rounded-bl-none rounded-tr-3xl lg:rounded-tr-none lg:rounded-bl-3xl flex items-center justify-center overflow-hidden">
                   <div className="text-center p-8">
                     <p className="text-burgundy-400 text-sm">[ ZDJĘCIE: Benefit Systems — Arkady Kubickiego ]</p>
                   </div>
@@ -279,8 +279,8 @@ function FeaturedCaseStudies() {
         <div className="grid md:grid-cols-2 gap-8 mb-10">
           {featured.slice(1).map((cs) => (
             <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full">
-                <div className="aspect-[16/9] bg-burgundy-100 flex items-center justify-center">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full">
+                <div className="aspect-[16/9] bg-burgundy-100 rounded-t-3xl flex items-center justify-center overflow-hidden">
                   <p className="text-burgundy-400 text-sm">[ ZDJĘCIE: {cs.client} ]</p>
                 </div>
                 <div className="p-6">
@@ -309,7 +309,7 @@ function FeaturedCaseStudies() {
 
         <div className="text-center">
           <Link href="/realizacje" className="btn-secondary text-base">
-            Zobacz wszystkie 9 realizacji →
+            Zobacz więcej realizacji →
           </Link>
         </div>
       </div>
@@ -371,32 +371,7 @@ function USP() {
   )
 }
 
-/* ─── SECTION 7: BIG TESTIMONIAL ─── */
-function BigTestimonial() {
-  return (
-    <section className="relative py-24 lg:py-32 gradient-burgundy text-white overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('/images/benefit-hero.jpg')] bg-cover bg-center" />
-      </div>
-      <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-        <svg className="w-12 h-12 mx-auto mb-6 text-rose-400/40" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-        </svg>
-        <blockquote className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-snug mb-8">
-          To była najbardziej kreatywna, a jednocześnie najbardziej spokojna współpraca eventowa, jaką mieliśmy.
-          Wszystko było dopięte na ostatni guzik, a my czuliśmy się zaopiekowani od początku do końca.
-        </blockquote>
-        <footer className="text-cream-300">
-          <span className="font-semibold text-white">Dział HR, korporacja</span>
-          <br />
-          <span className="text-sm">Event integracyjny dla 1 500 uczestników</span>
-        </footer>
-      </div>
-    </section>
-  )
-}
-
-/* ─── SECTION 8: NUMBERS ─── */
+/* ─── SECTION 7: NUMBERS ─── */
 function Numbers() {
   const stats = [
     { number: '1 500', label: 'uczestników na 1 evencie', sub: 'Zamek Królewski, Warszawa' },
@@ -427,7 +402,7 @@ function Numbers() {
   )
 }
 
-/* ─── SECTION 9: VIDEO ─── */
+/* ─── SECTION 8: VIDEO ─── */
 function VideoSection() {
   return (
     <section className="py-20 lg:py-24 bg-white">
@@ -435,7 +410,7 @@ function VideoSection() {
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-burgundy-800 text-center mb-10">
           Zobacz, jak to wygląda w praktyce
         </h2>
-        <div className="aspect-video rounded-2xl overflow-hidden bg-burgundy-100 shadow-lg">
+        <div className="aspect-video rounded-3xl overflow-hidden bg-burgundy-100 shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/JO7Z8hrY7Rw"
             title="Buddy's Events — Benefit Systems event"
@@ -449,7 +424,13 @@ function VideoSection() {
   )
 }
 
-/* ─── SECTION 10: CTA / CONTACT ─── */
+/* ─── SECTION 9: CTA / CONTACT ─── */
+const contacts = [
+  { name: 'Marta', phone: '+48 503 455 846', email: 'marta@buddys-events.pl' },
+  { name: 'Rafał', phone: '+48 XXX XXX XXX', email: 'rafal@buddys-events.pl' },
+  { name: 'XYZ', phone: '+48 XXX XXX XXX', email: 'xyz@buddys-events.pl' },
+]
+
 function CTASection() {
   return (
     <section className="py-20 lg:py-28 gradient-burgundy text-white">
@@ -463,25 +444,26 @@ function CTASection() {
               Opowiedz nam o swoim evencie. Bez zobowiązań — po prostu porozmawiajmy.
             </p>
 
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-3">
-                <span className="w-10 h-10 rounded-lg bg-burgundy-700 flex items-center justify-center text-lg">📞</span>
-                <div>
-                  <div className="text-xs text-cream-300">Zadzwoń</div>
-                  <a href="tel:+48503455846" className="font-bold text-rose-400 hover:text-rose-300 transition-colors">
-                    +48 503 455 846
-                  </a>
+            <div className="space-y-5 mb-8">
+              {contacts.map((c) => (
+                <div key={c.name} className="flex items-start gap-4">
+                  <span className="w-10 h-10 rounded-xl bg-burgundy-700 flex items-center justify-center text-base font-bold text-rose-300 flex-shrink-0">
+                    {c.name[0]}
+                  </span>
+                  <div>
+                    <div className="font-bold text-white text-sm mb-0.5">{c.name}</div>
+                    <div className="flex flex-wrap gap-x-3 gap-y-0.5">
+                      <a href={`tel:${c.phone.replace(/\s/g, '')}`} className="text-rose-400 hover:text-rose-300 transition-colors text-sm">
+                        {c.phone}
+                      </a>
+                      <span className="text-burgundy-500 text-sm">·</span>
+                      <a href={`mailto:${c.email}`} className="text-rose-400 hover:text-rose-300 transition-colors text-sm">
+                        {c.email}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="w-10 h-10 rounded-lg bg-burgundy-700 flex items-center justify-center text-lg">✉️</span>
-                <div>
-                  <div className="text-xs text-cream-300">Napisz</div>
-                  <a href="mailto:marta@buddys-events.pl" className="font-bold text-rose-400 hover:text-rose-300 transition-colors">
-                    marta@buddys-events.pl
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
 
             <p className="text-cream-300 text-sm">
@@ -507,7 +489,6 @@ export default function HomePage() {
       <Process />
       <FeaturedCaseStudies />
       <USP />
-      <BigTestimonial />
       <Numbers />
       <VideoSection />
       <CTASection />
