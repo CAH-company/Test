@@ -16,7 +16,16 @@ interface WaveDividerProps {
   flip?: boolean
 }
 
-const colorMap: Record<string, string> = {
+const gradientBurgundy = 'linear-gradient(135deg, #4A0E23 0%, #6B1530 50%, #3D0C1C 100%)'
+
+const bgMap: Record<string, string> = {
+  dark: gradientBurgundy,
+  light: '#ffffff',
+  cream: '#FDFAF8',
+  white: '#ffffff',
+}
+
+const fillMap: Record<string, string> = {
   dark: '#3D0C1C',
   light: '#ffffff',
   cream: '#FDFAF8',
@@ -24,12 +33,12 @@ const colorMap: Record<string, string> = {
 }
 
 export function WaveDivider({ from, to, flip = false }: WaveDividerProps) {
-  const fillColor = colorMap[to] ?? '#ffffff'
+  const fillColor = fillMap[to] ?? '#ffffff'
 
   return (
     <div
       className="relative overflow-hidden leading-none"
-      style={{ marginBottom: '-2px', background: colorMap[from] }}
+      style={{ marginBottom: '-2px', background: bgMap[from] }}
     >
       <svg
         viewBox="0 0 1440 80"
