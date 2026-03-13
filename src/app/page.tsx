@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Sparkles, Building2, HardHat } from 'lucide-react'
 import { caseStudies } from '@/data/caseStudies'
 import { ContactForm } from '@/components/ContactForm'
 import { WaveDivider } from '@/components/WaveDivider'
@@ -65,8 +66,14 @@ function Hero() {
 /* ─── SECTION 2: CLIENT LOGOS ─── */
 function ClientLogos() {
   const clients = [
-    'Benefit Systems', 'NEUCA', 'OnlyBio', 'E. Wedel',
-    'Cordia', 'Marsh', 'Stonex', 'Invisibobble'
+    { name: 'Benefit Systems', file: 'benefit-systems.svg' },
+    { name: 'NEUCA',           file: 'neuca.svg' },
+    { name: 'OnlyBio',         file: 'onlybio.svg' },
+    { name: 'E. Wedel',        file: 'e-wedel.svg' },
+    { name: 'Cordia',          file: 'cordia.svg' },
+    { name: 'Marsh',           file: 'marsh.svg' },
+    { name: 'Stonex',          file: 'stonex.svg' },
+    { name: 'Invisibobble',    file: 'invisibobble.svg' },
   ]
 
   return (
@@ -76,8 +83,15 @@ function ClientLogos() {
           <p className="text-center text-sm font-medium text-gray-500 mb-6 uppercase tracking-wider">Zaufali nam</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {clients.map((client) => (
-              <div key={client} className="logo-grayscale px-4 py-2">
-                <span className="text-lg font-bold text-gray-700 font-display">{client}</span>
+              <div key={client.name} className="logo-grayscale flex items-center justify-center px-4 py-2">
+                {/* Drop your logo file into /public/logos/ — see README.md in that folder */}
+                <img
+                  src={`/logos/${client.file}`}
+                  alt={client.name}
+                  loading="lazy"
+                  decoding="async"
+                  style={{ height: '48px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }}
+                />
               </div>
             ))}
           </div>
@@ -92,7 +106,7 @@ function ClientLogos() {
 function Segments() {
   const segments = [
     {
-      icon: '💄',
+      icon: <Sparkles className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Beauty & Lifestyle',
       items: ['Eventy influencerskie', 'Launche produktów', 'Premiery limitowanych edycji', 'Spotkania prasowe'],
       caseStudy: 'OnlyBio × E. Wedel',
@@ -100,7 +114,7 @@ function Segments() {
       num: '01',
     },
     {
-      icon: '🏢',
+      icon: <Building2 className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Korporacyjna & Biznesowa',
       items: ['Integracje dla 1500+ osób', 'Eventy ogólnofirmowe', 'Konferencje i gale', 'Firmowe wigilie i pikniki'],
       caseStudy: 'Benefit Systems — 1 500 uczestników',
@@ -108,7 +122,7 @@ function Segments() {
       num: '02',
     },
     {
-      icon: '🏗️',
+      icon: <HardHat className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Deweloperska & Budowlana',
       items: ['Integracje po fuzjach', 'Otwarcia inwestycji i biur', 'Pikniki dla pracowników', 'Wigilie firmowe'],
       caseStudy: 'Cordia — integracja po fuzji',
@@ -150,7 +164,7 @@ function Segments() {
 
                 <div className="relative p-8 pt-6">
                   {/* Icon bubble */}
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-5 shadow-sm"
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-sm"
                     style={{ background: 'linear-gradient(135deg, #fce7f3 0%, #fdf2f4 100%)' }}>
                     {seg.icon}
                   </div>
@@ -186,72 +200,7 @@ function Segments() {
           </div>
         </div>
       </section>
-      <WaveDivider from="cream" to="dark" />
-    </div>
-  )
-}
-
-/* ─── SECTION 4: PROCESS ─── */
-function Process() {
-  const steps = [
-    {
-      num: '01',
-      title: 'Brief & zrozumienie',
-      desc: 'Najpierw słuchamy. Pytamy o cel, zespół, budżet i obawy. Rozumiemy, czego naprawdę potrzebujesz — nie tylko, czego oczekujesz.',
-    },
-    {
-      num: '02',
-      title: 'Koncepcja & wizualizacje',
-      desc: 'Dostajesz moodboardy, wizualizacje 3D i scenariusz — zanim cokolwiek ruszymy. Akceptujesz pełen kosztorys PRZED realizacją.',
-    },
-    {
-      num: '03',
-      title: 'Produkcja & logistyka',
-      desc: 'Jeden zespół ogarnia wszystko: scenografię, catering, technikę, bezpieczeństwo, transport. Ty nie szukasz podwykonawców.',
-    },
-    {
-      num: '04',
-      title: 'Realizacja & koordynacja',
-      desc: 'W dniu eventu Ty jesteś gościem, nie koordynatorem. My zarządzamy wszystkim — mamy plany A, B, C i D.',
-    },
-    {
-      num: '05',
-      title: 'Rozliczenie & follow-up',
-      desc: 'Jedna faktura, brak ukrytych kosztów, pełna dokumentacja. Zero niespodzianek po evencie.',
-    },
-  ]
-
-  return (
-    <div>
-      <section className="py-20 lg:py-28 gradient-burgundy text-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-extrabold font-display mb-4">
-              Od pierwszej rozmowy do rozliczenia
-            </h2>
-            <p className="text-cream-200 max-w-2xl mx-auto">
-              Tak wygląda nasza współpraca. Przewidywalnie, spokojnie i bez stresu po Twojej stronie.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-6">
-            {steps.map((step) => (
-              <div key={step.num}>
-                <div className="text-5xl font-extrabold font-display text-rose-500/20 mb-2">{step.num}</div>
-                <h3 className="text-lg font-bold font-display mb-2">{step.title}</h3>
-                <p className="text-cream-300 text-sm leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-14">
-            <Link href="/kontakt" className="btn-primary text-base">
-              Umów rozmowę — opowiemy więcej
-            </Link>
-          </div>
-        </div>
-      </section>
-      <WaveDivider from="dark" to="cream" />
+      {/* No WaveDivider needed here — FeaturedCaseStudies also uses bg-cream-50 */}
     </div>
   )
 }
@@ -537,7 +486,6 @@ export default function HomePage() {
       <Hero />
       <ClientLogos />
       <Segments />
-      <Process />
       <FeaturedCaseStudies />
       <USP />
       <Numbers />
