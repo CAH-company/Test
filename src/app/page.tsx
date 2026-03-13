@@ -23,9 +23,9 @@ function Hero() {
                 Eventy od 50 do 1500 osób — w całej Polsce.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/kontakt" className="btn-primary text-base !py-4 !px-8">
+                <a href="#kontakt" className="btn-primary text-base !py-4 !px-8">
                   Umów rozmowę
-                </Link>
+                </a>
                 <a href="#realizacje" className="btn-secondary !border-cream-200 !text-cream-200 hover:!bg-cream-200 hover:!text-burgundy-800 text-base !py-4 !px-8">
                   Zobacz realizacje ↓
                 </a>
@@ -430,7 +430,7 @@ const contacts = [
 
 function CTASection() {
   return (
-    <section className="py-20 lg:py-28 bg-burgundy-800 text-white">
+    <section id="kontakt" className="py-20 lg:py-28 bg-burgundy-800 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
@@ -463,9 +463,17 @@ function CTASection() {
               ))}
             </div>
 
-            <p className="text-cream-300 text-sm">
-              Jesteśmy dostępni w całej Polsce.
-            </p>
+            {/* Calendly */}
+            <a
+              href="https://calendly.com/TWOJ-LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 w-full justify-center rounded-2xl border-2 border-rose-400/60 hover:border-rose-400 bg-burgundy-700/40 hover:bg-burgundy-700/70 text-white font-semibold py-4 px-6 transition-all duration-200"
+            >
+              <span className="text-xl">📅</span>
+              <span>Zarezerwuj termin w kalendarzu</span>
+            </a>
+            <p className="text-cream-300/60 text-xs mt-2 text-center">Wybierz wygodny dla Ciebie termin rozmowy</p>
           </div>
 
           <ContactForm compact />
