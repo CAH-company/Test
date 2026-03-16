@@ -67,28 +67,34 @@ function ClientLogos() {
     { name: 'Benefit Systems', file: 'benefit-systems.svg' },
     { name: 'NEUCA',           file: 'neuca.svg' },
     { name: 'OnlyBio',         file: 'onlybio.svg' },
-    { name: 'E. Wedel',        file: 'e-wedel.svg' },
+    { name: 'E. Wedel',        file: 'e-wedel.png' },
     { name: 'Cordia',          file: 'cordia.svg' },
     { name: 'Marsh',           file: 'marsh.svg' },
     { name: 'Stonex',          file: 'stonex.svg' },
-    { name: 'Invisibobble',    file: 'invisibobble.svg' },
+    { name: 'Invisibobble',    file: 'invisibobble.png' },
   ]
+
+  // duplicate for seamless loop
+  const track = [...clients, ...clients]
 
   return (
     <div>
-      <section className="py-8 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-sm font-medium text-gray-500 mb-6 uppercase tracking-wider">Zaufali nam</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {clients.map((client) => (
-              <div key={client.name} className="logo-grayscale flex items-center justify-center px-4 py-2">
-                {/* Drop your logo file into /public/logos/ — see README.md in that folder */}
+      <section className="py-10 bg-white border-b border-gray-100 overflow-hidden">
+        <p className="text-center text-xs font-semibold text-gray-400 mb-8 uppercase tracking-[0.2em]">Zaufali nam</p>
+        <div className="relative">
+          {/* fade edges */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10" />
+
+          <div className="flex animate-marquee w-max">
+            {track.map((client, i) => (
+              <div key={i} className="logo-grayscale flex items-center justify-center px-10">
                 <img
                   src={`/logos/${client.file}`}
                   alt={client.name}
                   loading="lazy"
                   decoding="async"
-                  style={{ height: '48px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }}
+                  style={{ height: '44px', width: 'auto', maxWidth: '140px', objectFit: 'contain' }}
                 />
               </div>
             ))}

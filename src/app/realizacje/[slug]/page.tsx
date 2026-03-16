@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { caseStudies, getCaseStudy, getRelatedCaseStudies } from '@/data/caseStudies'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Gallery from '@/components/Gallery'
 
 export function generateStaticParams() {
   return caseStudies.map((cs) => ({ slug: cs.slug }))
@@ -71,11 +72,11 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
         </div>
       </section>
 
-      {/* Hero image placeholder */}
+      {/* Hero image */}
       <section className="bg-burgundy-100">
         <div className="max-w-6xl mx-auto">
-          <div className="aspect-[21/9] flex items-center justify-center">
-            <p className="text-burgundy-400">[ HERO IMAGE: {cs.client} — najlepsze zdjęcie z wydarzenia ]</p>
+          <div className="aspect-[21/9] overflow-hidden">
+            <img src={cs.heroImage} alt={cs.title} className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -149,13 +150,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <h2 className="text-2xl font-extrabold font-display text-burgundy-800 mb-6">
               Galeria
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[1,2,3,4,5,6].map((i) => (
-                <div key={i} className="aspect-[4/3] rounded-xl bg-burgundy-100 flex items-center justify-center">
-                  <p className="text-burgundy-300 text-xs">[ Zdjęcie {i} ]</p>
-                </div>
-              ))}
-            </div>
+            <Gallery slug={cs.slug} title={cs.title} />
           </div>
 
           {/* Video */}
@@ -201,8 +196,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               {related.map((r) => (
                 <Link key={r.slug} href={`/realizacje/${r.slug}`} className="block group">
                   <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
-                    <div className="aspect-[16/9] bg-burgundy-100 flex items-center justify-center">
-                      <p className="text-burgundy-400 text-sm">[ ZDJĘCIE: {r.client} ]</p>
+                    <div className="aspect-[16/9] bg-burgundy-100 overflow-hidden">
+                      <img src={r.thumbnailImage} alt={r.title} className="w-full h-full object-cover" />
                     </div>
                     <div className="p-6">
                       <h3 className="text-lg font-bold font-display text-burgundy-800 mb-2 group-hover:text-rose-600 transition-colors">
