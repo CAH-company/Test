@@ -51,12 +51,18 @@ export const metadata: Metadata = {
     siteName: "Buddy's Events",
     locale: 'pl_PL',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: "Buddy's Events" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Buddy's Events — Agencja eventowa",
     description: 'Organizujemy eventy dla firm od 50 do 1500 osób. Jedna umowa, zero stresu.',
     site: '@buddysevents',
+    images: ['/og-image.jpg'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? undefined,
@@ -83,9 +89,9 @@ const localBusinessJsonLd = {
   },
   priceRange: '$$',
   sameAs: [
-    'https://instagram.com/buddysevents',
-    'https://www.facebook.com/buddysevents',
-    'https://www.linkedin.com/company/buddys-events',
+    'https://www.instagram.com/buddys.events/',
+    'https://www.facebook.com/p/Buddys-events-61552382696517/',
+    'https://pl.linkedin.com/in/martanaumiuk',
   ],
 }
 
