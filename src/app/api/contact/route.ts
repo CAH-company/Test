@@ -12,8 +12,8 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: 'Formularz <formularz@buddys-events.pl>',
-      to: ['marta@buddys-events.pl'],
+      from: "Buddy's Events <biuro@buddys-events.pl>",
+      to: (process.env.CONTACT_RECIPIENTS ?? 'marta@buddys-events.pl').split(',').map(e => e.trim()),
       replyTo: email,
       subject: `Zapytanie — ${firstName} ${lastName}`,
       html: `

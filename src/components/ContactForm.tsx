@@ -115,7 +115,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       className="bg-burgundy-700/50 backdrop-blur rounded-2xl p-8 lg:p-10 space-y-5 border border-burgundy-600/30"
     >
       <div>
-        <h2 className="text-2xl font-bold font-display mb-1">Wyślij zapytanie</h2>
+        <h2 className="text-2xl font-bold font-display mb-1">Wyślij nam dane kontaktowe</h2>
         <p className="text-cream-300 text-sm">Wypełnij formularz — odezwiemy się w ciągu 24h.</p>
       </div>
 
