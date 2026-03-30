@@ -431,7 +431,6 @@ function VideoSection() {
 const contacts = [
   { name: 'Marta', phone: '+48 503 455 846', email: 'marta@buddys-events.pl' },
   { name: 'Kasia', phone: '+48 XXX XXX XXX', email: 'kasia@buddys-events.pl' },
-  { name: 'Rafał', phone: '+48 XXX XXX XXX', email: 'rafal@buddys-events.pl' },
 ]
 
 function CTASection() {
