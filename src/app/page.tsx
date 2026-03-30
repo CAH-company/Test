@@ -33,11 +33,12 @@ function Hero() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] rounded-3xl bg-burgundy-700/50 border border-burgundy-600/30 overflow-hidden flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="text-cream-300 text-sm mb-2">[ HERO VIDEO / ZDJĘCIE ]</p>
-                  <p className="text-cream-200/60 text-xs">Montaż z eventów: Benefit Systems 1500 os., meduzy Ocean, OnlyBio Wedel, Cordia kajaki</p>
-                </div>
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+                <img
+                  src="/images/hero.jpg"
+                  alt="Buddy's Events — eventy firmowe"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
