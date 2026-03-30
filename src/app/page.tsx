@@ -233,10 +233,12 @@ function FeaturedCaseStudies() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
                 <div className="grid lg:grid-cols-2">
                   {/* Image — rounded-tl/bl via parent overflow-hidden */}
-                  <div className="aspect-[16/10] bg-burgundy-100 overflow-hidden flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <p className="text-burgundy-400 text-sm">[ ZDJĘCIE: Benefit Systems — Arkady Kubickiego ]</p>
-                    </div>
+                  <div className="aspect-[16/10] bg-burgundy-100 overflow-hidden">
+                    <img
+                      src={featured[0].thumbnailImage}
+                      alt={featured[0].title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   </div>
                   <div className="p-8 lg:p-10 flex flex-col justify-center">
                     <div className="flex gap-2 mb-3">
@@ -277,8 +279,12 @@ function FeaturedCaseStudies() {
             {featured.slice(1).map((cs) => (
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full">
-                  <div className="aspect-[16/9] bg-burgundy-100 overflow-hidden flex items-center justify-center">
-                    <p className="text-burgundy-400 text-sm">[ ZDJĘCIE: {cs.client} ]</p>
+                  <div className="aspect-[16/9] bg-burgundy-100 overflow-hidden">
+                    <img
+                      src={cs.thumbnailImage}
+                      alt={cs.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex gap-2 mb-3">
