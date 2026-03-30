@@ -150,7 +150,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <h2 className="text-2xl font-extrabold font-display text-burgundy-800 mb-6">
               Galeria
             </h2>
-            <Gallery slug={cs.slug} title={cs.title} />
+            <Gallery slug={cs.slug} title={cs.title} imageExt={cs.imageExt} />
           </div>
 
           {/* Video */}

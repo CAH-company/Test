@@ -7,12 +7,13 @@ interface GalleryProps {
   slug: string
   title: string
   count?: number
+  imageExt?: string
 }
 
-export default function Gallery({ slug, title, count = 6 }: GalleryProps) {
+export default function Gallery({ slug, title, count = 6, imageExt = 'jpg' }: GalleryProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
-  const images = Array.from({ length: count }, (_, i) => `/images/${slug}/gallery-${i + 1}.jpg`)
+  const images = Array.from({ length: count }, (_, i) => `/images/${slug}/gallery-${i + 1}.${imageExt}`)
   const alts = Array.from({ length: count }, (_, i) => `${title} — zdjęcie ${i + 1}`)
 
   return (

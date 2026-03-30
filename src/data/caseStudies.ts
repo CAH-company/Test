@@ -14,6 +14,7 @@ export interface CaseStudy {
   prepTime: string;
   heroImage: string;
   thumbnailImage: string;
+  imageExt?: string;
   quote?: string;
   quoteAuthor?: string;
   challenge: string;
@@ -107,8 +108,9 @@ export const caseStudies: CaseStudy[] = [
     duration: '2 dni',
     location: 'Hotel Bonifacio',
     prepTime: '~2 miesiące',
-    heroImage: '/images/cordia-integracja/hero.jpg',
-    thumbnailImage: '/images/cordia-integracja/thumb.jpg',
+    heroImage: '/images/cordia-integracja/hero.jpeg',
+    thumbnailImage: '/images/cordia-integracja/thumb.jpeg',
+    imageExt: 'jpeg',
     challenge: 'Firma po fuzji — 2 lata integracji, które nie przyniosły żadnego efektu. Pracownicy nie chcieli brać udziału w zabawach, trzymali się swoich „obozów", traktowali integrację jako przykry obowiązek.',
     solution: 'Zmiana kontekstu zamiast kolejnych gier. Hotel Bonifacio — basen, palmy, klimat wakacji all inclusive. Aztecki Mistrz Gry z fabularną integracją, zadania wymagające współpracy (nie da się wykonać solo), spływ kajakowy. Zero przymusu — animatorzy stopniowo wciągali w zabawę.',
     highlights: [
