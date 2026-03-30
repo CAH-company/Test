@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <Link href="/" className="flex items-center mb-4">
-              <Image src="/logo-buddys.svg" alt="Buddy's Events" width={150} height={44} />
+              <Image src="/logo-buddys-transparent.svg" alt="Buddy's Events" width={120} height={120} />
             </Link>
             <p className="text-cream-300 text-sm leading-relaxed">
               Agencja eventowa z charakterem. Od koncepcji po rozliczenie — jedna umowa, jeden partner, zero stresu.
