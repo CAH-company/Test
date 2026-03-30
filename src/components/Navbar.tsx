@@ -19,8 +19,8 @@ export function Navbar() {
       <nav
         className={`pointer-events-auto max-w-6xl mx-auto rounded-2xl transition-all duration-300 overflow-hidden ${
           scrolled
-            ? 'bg-burgundy-900/95 backdrop-blur-xl shadow-2xl shadow-burgundy-950/30 border border-burgundy-700/50'
-            : 'bg-burgundy-800/75 backdrop-blur-lg border border-white/10'
+            ? 'bg-[#6d1e33] shadow-2xl shadow-burgundy-950/30 border border-[#6d1e33]'
+            : 'bg-[#6d1e33]/90 backdrop-blur-lg border border-[#6d1e33]'
         }`}
       >
         {/* Decorative bubble orbs */}
@@ -31,7 +31,7 @@ export function Navbar() {
         <div className="relative px-6 py-3.5 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image src="/logo-buddys.svg" alt="Buddy's Events" width={120} height={36} priority />
+            <Image src="/logo-buddys.svg" alt="Buddy's Events" width={44} height={44} priority />
           </Link>
 
           {/* Desktop nav */}
