@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -6,9 +7,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🐾</span>
-              <span className="text-xl font-extrabold text-white font-display">Buddy&apos;s Events</span>
+            <Link href="/" className="flex items-center mb-4">
+              <Image src="/logo-buddys.svg" alt="Buddy's Events" width={150} height={44} />
             </Link>
             <p className="text-cream-300 text-sm leading-relaxed">
               Agencja eventowa z charakterem. Od koncepcji po rozliczenie — jedna umowa, jeden partner, zero stresu.

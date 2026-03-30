@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,11 +30,8 @@ export function Navbar() {
 
         <div className="relative px-6 py-3.5 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-xl">🐾</span>
-            <span className="text-lg lg:text-xl font-extrabold text-white font-display tracking-tight">
-              Buddy&apos;s
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Image src="/logo-buddys.svg" alt="Buddy's Events" width={120} height={36} priority />
           </Link>
 
           {/* Desktop nav */}
