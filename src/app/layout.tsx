@@ -51,17 +51,17 @@ export const metadata: Metadata = {
     siteName: "Buddy's Events",
     locale: 'pl_PL',
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: "Buddy's Events" }],
+    images: [{ url: '/og-image.jpg.png', width: 1200, height: 630, alt: "Buddy's Events" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Buddy's Events — Agencja eventowa",
     description: 'Organizujemy eventy dla firm od 50 do 1500 osób. Jedna umowa, zero stresu.',
     site: '@buddysevents',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.jpg.png'],
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon-32x32.png',
     apple: '/apple-touch-icon.png',
   },
   verification: {
