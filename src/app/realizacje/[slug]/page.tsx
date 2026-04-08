@@ -196,7 +196,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <div className="grid md:grid-cols-2 gap-8">
               {related.map((r) => (
                 <Link key={r.slug} href={`/realizacje/${r.slug}`} className="block group">
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-gray-200">
+                  <div className="bg-white rounded-2xl overflow-hidden card-cream transition-all border border-gray-200">
                     <div className="relative aspect-[16/9] bg-burgundy-100 overflow-hidden">
                       <Image src={r.thumbnailImage} alt={r.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                     </div>

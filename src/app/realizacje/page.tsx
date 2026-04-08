@@ -39,7 +39,7 @@ export default function RealizacjePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((cs) => (
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
-                <article className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 h-full flex flex-col">
+                <article className="bg-white rounded-3xl overflow-hidden card-cream transition-all duration-300 hover:-translate-y-1 border border-gray-200 h-full flex flex-col">
                   {/* Image - explicitly rounded-t-3xl + overflow-hidden */}
                   <div className="relative aspect-[16/10] bg-burgundy-100 rounded-t-3xl overflow-hidden">
                     <Image src={cs.thumbnailImage} alt={cs.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
