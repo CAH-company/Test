@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Script from 'next/script'
 import { Sparkles, Building2, HardHat } from 'lucide-react'
 import { caseStudies } from '@/data/caseStudies'
 import { ContactForm } from '@/components/ContactForm'
@@ -445,12 +446,13 @@ function CTASection() {
     <section id="kontakt" className="py-20 lg:py-28 bg-burgundy-800 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left — contacts + form */}
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold font-display mb-4">
               Umów się na kawę z&nbsp;Buddym&nbsp;☕
             </h2>
             <p className="text-cream-200 text-lg mb-8">
-              Opowiedz nam o swoim evencie. Bez zobowiązań po prostu porozmawiajmy.
+              Opowiedz nam o swoim evencie. Bez zobowiązań, po prostu porozmawiajmy.
             </p>
 
             <div className="space-y-5 mb-8">
@@ -475,20 +477,23 @@ function CTASection() {
               ))}
             </div>
 
-            {/* Calendly */}
-            <a
-              href="https://calendly.com/TWOJ-LINK"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 w-full justify-center rounded-2xl border-2 border-rose-400/60 hover:border-rose-400 bg-burgundy-700/40 hover:bg-burgundy-700/70 text-white font-semibold py-4 px-6 transition-all duration-200"
-            >
-              <span className="text-xl">📅</span>
-              <span>Zarezerwuj termin w kalendarzu</span>
-            </a>
-            <p className="text-cream-300/60 text-xs mt-2 text-center">Wybierz wygodny dla Ciebie termin rozmowy</p>
+            <ContactForm compact />
           </div>
 
-          <ContactForm compact />
+          {/* Right — Calendly inline */}
+          <div>
+            <p className="text-cream-200 text-sm font-semibold uppercase tracking-widest mb-4">
+              📅 Zarezerwuj termin rozmowy
+            </p>
+            <div className="rounded-2xl overflow-hidden bg-white shadow-lg">
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/marta-buddys-events?hide_landing_page_details=1&hide_gdpr_banner=1"
+                style={{ minWidth: '320px', height: '700px' }}
+              />
+            </div>
+            <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+          </div>
         </div>
       </div>
     </section>
