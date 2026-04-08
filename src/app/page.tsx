@@ -95,7 +95,7 @@ function ClientLogos() {
                   alt={client.name}
                   loading="lazy"
                   decoding="async"
-                  style={{ height: '44px', width: 'auto', maxWidth: '140px', objectFit: 'contain' }}
+                  style={{ height: client.file === 'e-wedel.png' ? '56px' : '44px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }}
                 />
               </div>
             ))}

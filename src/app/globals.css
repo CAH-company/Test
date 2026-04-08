@@ -77,3 +77,8 @@ body {
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Polish typography — prevent orphaned single letters */
+p, li, blockquote {
+  text-wrap: pretty;
+}

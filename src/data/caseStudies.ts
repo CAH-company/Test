@@ -45,8 +45,8 @@ export const caseStudies: CaseStudy[] = [
     thumbnailImage: '/images/benefit-systems/thumb.jpg',
     quote: 'To była najbardziej kreatywna, a jednocześnie najbardziej spokojna współpraca eventowa, jaką mieliśmy. Wszystko było dopięte na ostatni guzik, a my czuliśmy się zaopiekowani od początku do końca.',
     quoteAuthor: 'Dział HR, korporacja',
-    challenge: 'Klient szukał partnera, który zaproponuje coś więcej niż kolejny „ładny, poprawny event". Po wcześniejszych doświadczeniach pojawiły się obawy: powtarzalność, ryzyko nudy przy 1500 osobach, brak zabezpieczenia pogodowego i kolejki przy recepcji — w obiekcie zabytkowym z licznymi ograniczeniami technicznymi.',
-    solution: 'Stworzyliśmy motyw „W rytmie Grupy" — nowoczesną interpretację klimatu dworskiego, inspirowaną Bridgertonami, przełamaną humorem i energią marki. 20 aktorów w strojach z epoki, Król Jankes III Waza, zawody Hobby Horse z CSR (darowizna na Fundację Pegazus po 1000 skokach), koncert IGO, Brass Federacja prowadząca paradę muzyczną.',
+    challenge: 'Klient szukał partnera, który zaproponuje coś więcej niż kolejny „ładny, poprawny event". Po wcześniejszych doświadczeniach pojawiły się obawy: powtarzalność, ryzyko nudy przy 1500 osobach, brak zabezpieczenia pogodowego i kolejki przy recepcji, w obiekcie zabytkowym z licznymi ograniczeniami technicznymi.',
+    solution: 'Stworzyliśmy motyw „W rytmie Grupy": nowoczesną interpretację klimatu dworskiego, inspirowaną Bridgertonami, przełamaną humorem i energią marki. 20 aktorów w strojach z epoki, Król Jankes III Waza, zawody Hobby Horse z CSR (darowizna na Fundację Pegazus po 1000 skokach), koncert IGO, Brass Federacja prowadząca paradę muzyczną.',
     highlights: [
       '1500 uczestników z całej Polski',
       '20 aktorów w interakcji z gośćmi',
@@ -66,7 +66,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'ocean-mozliwosci',
-    title: 'Ocean Możliwości — Benefit Systems Fitness',
+    title: 'Ocean Możliwości. Benefit Systems Fitness',
     client: 'Benefit Systems Oddział Fitness',
     isAnonymous: true,
     anonymousLabel: 'Lider rynku benefitów fitness',
@@ -103,7 +103,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'onlybio-wedel',
-    title: 'Premiera Kalendarza Adwentowego — OnlyBio × E. Wedel',
+    title: 'Premiera Kalendarza Adwentowego. OnlyBio × E. Wedel',
     client: 'OnlyBio × E. Wedel',
     industry: 'Beauty / Kosmetyczna',
     industryTag: 'beauty',
@@ -116,7 +116,7 @@ export const caseStudies: CaseStudy[] = [
     heroImage: '/images/onlybio-wedel/hero.jpg',
     thumbnailImage: '/images/onlybio-wedel/thumb.jpg',
     challenge: 'Tylko 1 miesiąc na przygotowanie. Ograniczony budżet przy bardzo wysokich oczekiwaniach wizualnych. Nocny montaż w muzeum, ekspresowy demontaż przed otwarciem. Koordynacja 4 niezależnych marek z różnymi wizjami.',
-    solution: 'Cały event jako fizyczne wejście do świata opakowania kalendarza adwentowego. Scenografia odwzorowana 1:1 z opakowania produktu — ruchomy diabelski młyn, otwierane okienka z produktami, różowe krzesełka inspirowane Paryżem. Aktywizacje: test zapachów z zasłoniętymi oczami, degustacja czekolady „w ciemno", baloniki z QR kodami.',
+    solution: 'Cały event jako fizyczne wejście do świata opakowania kalendarza adwentowego. Scenografia odwzorowana 1:1 z opakowania produktu: ruchomy diabelski młyn, otwierane okienka z produktami, różowe krzesełka inspirowane Paryżem. Aktywizacje: test zapachów z zasłoniętymi oczami, degustacja czekolady „w ciemno", baloniki z QR kodami.',
     highlights: [
       'Scenografia 1:1 z opakowania produktu',
       'Ruchomy diabelski młyn w kształcie fabryki',
@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'onlybio-invisibobble',
-    title: 'Natural Beauty Experience — OnlyBio × Invisibobble',
+    title: 'Natural Beauty Experience. OnlyBio × Invisibobble',
     client: 'OnlyBio × Invisibobble',
     industry: 'Beauty / Kosmetyczna',
     industryTag: 'beauty',
@@ -149,8 +149,8 @@ export const caseStudies: CaseStudy[] = [
     thumbnailImage: '/images/onlybio-invisibobble/thumb.jpg',
     quote: 'Nawet nie spodziewałam się, że będzie tak pięknie.',
     quoteAuthor: 'Klientka, OnlyBio',
-    challenge: 'Niecały miesiąc na przygotowanie premiery nowej linii kosmetyków i gumek do włosów. Surowe obostrzenia Łazienek Królewskich: brak widocznego brandingu, brak wysokich zabudów zasłaniających fasadę, ograniczenia montażowe. Pierwsza współpraca — decyzja oparta wyłącznie na zaufaniu zbudowanym podczas rozmów online.',
-    solution: 'Koncepcja „Natural Beauty Experience" — slow, self-care event bez sceny i ekranów LED. Cała przestrzeń zewnętrzna wyłożona różową wykładziną. Okrągłe stoły w jeden długi ciąg, kwiaty przechodzące tonalnie z koloru w kolor, neony z logotypami. Zajęcia Chillates z Igą Majewską, warsztaty robienia matchy, spektakularna kwiatowa huśtawka. Dyfuzory zapachowe — aromat kosmetyków unosił się w całej przestrzeni.',
+    challenge: 'Niecały miesiąc na przygotowanie premiery nowej linii kosmetyków i gumek do włosów. Surowe obostrzenia Łazienek Królewskich: brak widocznego brandingu, brak wysokich zabudów zasłaniających fasadę, ograniczenia montażowe. Pierwsza współpraca, decyzja oparta wyłącznie na zaufaniu zbudowanym podczas rozmów online.',
+    solution: 'Koncepcja „Natural Beauty Experience": slow, self-care event bez sceny i ekranów LED. Cała przestrzeń zewnętrzna wyłożona różową wykładziną. Okrągłe stoły w jeden długi ciąg, kwiaty przechodzące tonalnie z koloru w kolor, neony z logotypami. Zajęcia Chillates z Igą Majewską, warsztaty robienia matchy, spektakularna kwiatowa huśtawka. Dyfuzory zapachowe, aromat kosmetyków unosił się w całej przestrzeni.',
     highlights: [
       '~80 influencerek i przedstawicielek mediów',
       'Cała przestrzeń wyłożona różową wykładziną',
@@ -174,7 +174,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'neuca-pikniki',
-    title: 'NEUCA – Siła z Relacji',
+    title: 'NEUCA: Siła z Relacji',
     client: 'NEUCA',
     industry: 'Farmaceutyczna / Dystrybutorska',
     industryTag: 'farmaceutyczna',
@@ -188,8 +188,8 @@ export const caseStudies: CaseStudy[] = [
     thumbnailImage: '/images/neuca-pikniki/thumb.jpg',
     quote: 'Zarządzamy nie eventem, lecz systemem relacji — na dużą skalę, przez lata, bez kompromisów jakościowych.',
     quoteAuthor: "Buddy's Events",
-    challenge: 'Ogólnopolski cykl pikników rodzinnych dla kluczowych partnerów biznesowych NEUCA — właścicieli aptek z najwyższymi wynikami sprzedażowymi. Realizowany nieprzerwanie przez kilkanaście lat, 8–11 lokalizacji rocznie. Każda lokalizacja musiała utrzymać najwyższy standard jakości, być spójna wizualnie we wszystkich miastach, a jednocześnie zaskakiwać nową koncepcją kreatywną.',
-    solution: 'Hasło przewodnie „NEUCA – Siła z Relacji". Co roku nowa koncepcja kreatywna i pełne KV z identyczną identyfikacją wizualną we wszystkich lokalizacjach. Ok. 30 osób załogi na każdą lokalizację. Program dla całych rodzin: strefy animatorów, dmuchańce, pokazy magików, 100+ różnych warsztatów na przestrzeni lat, sporty wodne. CSR: warsztaty budowy bud dla psów, edukacja ekologiczna. Prowadzący m.in.: Filip Chajzer, Omenaa Mensah, Olivier Janiak, Piotr Gąsowski, Krzysztof Ibisz.',
+    challenge: 'Ogólnopolski cykl pikników rodzinnych dla kluczowych partnerów biznesowych NEUCA, właścicieli aptek z najwyższymi wynikami sprzedażowymi. Realizowany nieprzerwanie przez kilkanaście lat, 8–11 lokalizacji rocznie. Każda lokalizacja musiała utrzymać najwyższy standard jakości, być spójna wizualnie we wszystkich miastach, a jednocześnie zaskakiwać nową koncepcją kreatywną.',
+    solution: 'Hasło przewodnie to „NEUCA: Siła z Relacji". Co roku nowa koncepcja kreatywna i pełne KV z identyczną identyfikacją wizualną we wszystkich lokalizacjach. Ok. 30 osób załogi na każdą lokalizację. Program dla całych rodzin: strefy animatorów, dmuchańce, pokazy magików, 100+ różnych warsztatów na przestrzeni lat, sporty wodne. CSR: warsztaty budowy bud dla psów, edukacja ekologiczna. Prowadzący m.in.: Filip Chajzer, Omenaa Mensah, Olivier Janiak, Piotr Gąsowski, Krzysztof Ibisz.',
     highlights: [
       '13 lat nieprzerwanych realizacji (2011–2023)',
       '8–11 lokalizacji rocznie w całej Polsce',
