@@ -338,7 +338,7 @@ function USP() {
     },
     {
       title: 'Proaktywność „czytamy w myślach"',
-      desc: 'Mamy rozwiązanie, zanim zdążysz pomyśleć <br> o problemie. Brak fotografa dzień przed eventem? Załatwione. Pies influencerki na terenie muzeum? Zaopiekowany.',
+      desc: 'Mamy rozwiązanie, zanim zdążysz pomyśleć o problemie. Brak fotografa dzień przed eventem? Załatwione. Pies influencerki na terenie muzeum? Zaopiekowany.',
     },
     {
       title: 'Nasz Prezes jest psem 🐾',
