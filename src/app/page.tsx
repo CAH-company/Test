@@ -188,7 +188,7 @@ function Segments() {
                     {seg.items.map((item) => (
                       <span
                         key={item}
-                        className="text-xs font-medium px-3 py-1.5 rounded-full bg-cream-50 text-gray-600 border border-gray-100"
+                        className="text-xs font-medium px-3 py-1.5 rounded-full bg-cream-100 text-gray-700 border border-gray-300"
                       >
                         {item}
                       </span>
