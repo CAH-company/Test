@@ -26,7 +26,7 @@ export default function RealizacjePage() {
             Nasze realizacje
           </h1>
           <p className="text-cream-200 text-lg max-w-2xl mx-auto">
-            9 szczegółowych case study — od integracji po fuzji po eventy influencerskie.
+            5 szczegółowych case study. Od integracji po fuzji po eventy influencerskie.
             Każdy projekt to inna branża, inna skala, inne wyzwanie.
           </p>
         </div>

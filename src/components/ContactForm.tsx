@@ -116,7 +116,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
     >
       <div>
         <h2 className="text-2xl font-bold font-display mb-1">Wyślij nam dane kontaktowe</h2>
-        <p className="text-cream-300 text-sm">Wypełnij formularz — odezwiemy się w ciągu 24h.</p>
+        <p className="text-cream-300 text-sm">Wypełnij formularz a odezwiemy się w ciągu 24h.</p>
       </div>
 
       {status === 'error' && (

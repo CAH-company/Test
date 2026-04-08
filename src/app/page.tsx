@@ -20,7 +20,7 @@ function Hero() {
               </h1>
               <p className="text-lg lg:text-xl text-cream-200 mb-8 leading-relaxed max-w-xl">
                 Od koncepcji po rozliczenie. Jedna umowa, jeden partner, zero stresu.
-                Eventy od 50 do 1500 osób — w całej Polsce.
+                Eventy od 50 do 1500 osób w całej Polsce.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#kontakt" className="btn-primary text-base !py-4 !px-8">
@@ -48,7 +48,7 @@ function Hero() {
               { number: '300+', label: 'eventów zrealizowanych' },
               { number: '1 500', label: 'uczestników na 1 evencie' },
               { number: '14+', label: 'lat doświadczenia' },
-              { number: '11', label: 'pikników w 1 miesiąc' },
+              { number: '35', label: 'pikników w 1 miesiąc' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-extrabold font-display text-rose-400">{stat.number}</div>
@@ -148,8 +148,8 @@ function Segments() {
               Specjalizujemy się w&nbsp;eventach dla:
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-              Znamy specyfikę Twojej branży — wiemy, czego oczekuje Twój zarząd,
-              Twoi goście i Twoi influencerzy.
+              Znamy specyfikę Twojej branży. Wiemy, czego oczekują:
+              zarząd, goście i influencerzy.
             </p>
           </div>
 
@@ -322,23 +322,23 @@ function USP() {
   const usps = [
     {
       title: 'Kompleksowość bez kompromisów',
-      desc: 'Jedna umowa, jeden zespół, jeden kosztorys. Bez ukrytych kosztów, bez chaosu z podwykonawcami. Akceptujesz budżet PRZED eventem — i tyle.',
+      desc: 'Jedna umowa, jeden zespół, jeden kosztorys. Bez ukrytych kosztów, bez chaosu z podwykonawcami. Akceptujesz budżet PRZED eventem, i tyle!',
     },
     {
       title: 'Immersyjny storytelling',
-      desc: 'Nie robimy „dekoracji". Projektujemy spójne światy — od zaproszenia, przez scenografię, po ostatni drink. Wizualizacje 3D realizowane 1:1.',
+      desc: 'Nie robimy „dekoracji". Projektujemy spójne światy. Od zaproszenia, przez dedykowaną scenografię, po ostatni drink. Wizualizacje 3D realizowane 1:1.',
     },
     {
       title: 'Kreatywna odwaga',
-      desc: 'Zero skakania w workach. Zamiast tego: Hobby Horse z CSR-em, Król Jankes III Waza, kurtyna pary wodnej i meduzy na suficie.',
+      desc: 'Zero skakania w workach. Zamiast tego: Hobby Horse z CSR-em, Król Jankes III Waza, ekran Leia i meduzy pod sufitem.',
     },
     {
       title: 'Instagramowalność by design',
-      desc: 'Każdy element eventu jest zaprojektowany jako tło do Reels i Stories. Content generuje się sam — bez dodatkowych sesji.',
+      desc: 'Każdy element eventu jest zaprojektowany jako tło do Reels i Stories. Content generuje się sam, bez dodatkowych sesji.',
     },
     {
-      title: 'Proaktywność — „czytamy w myślach"',
-      desc: 'Mamy rozwiązanie, zanim zdążysz pomyśleć o problemie. Brak fotografa dzień przed eventem? Załatwione. Pies influencerki na terenie muzeum? Zaopiekowany.',
+      title: 'Proaktywność „czytamy w myślach"',
+      desc: 'Mamy rozwiązanie, zanim zdążysz pomyśleć <br> o problemie. Brak fotografa dzień przed eventem? Załatwione. Pies influencerki na terenie muzeum? Zaopiekowany.',
     },
     {
       title: 'Nasz Prezes jest psem 🐾',
