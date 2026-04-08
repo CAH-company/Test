@@ -19,14 +19,14 @@ interface WaveDividerProps {
 const bgMap: Record<string, string> = {
   dark: 'transparent',
   light: '#ffffff',
-  cream: '#FDFAF8',
+  cream: '#F9F0EA',
   white: '#ffffff',
 }
 
 const fillMap: Record<string, string> = {
   dark: '#4A0E23',
   light: '#ffffff',
-  cream: '#FDFAF8',
+  cream: '#F9F0EA',
   white: '#ffffff',
 }
 

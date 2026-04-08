@@ -143,7 +143,7 @@ function Segments() {
 
   return (
     <div>
-      <section className="py-20 lg:py-28 bg-cream-50 overflow-hidden">
+      <section className="py-20 lg:py-28 bg-cream-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-rose-600 mb-4 bg-rose-50 border border-rose-100 px-5 py-2 rounded-full">
@@ -210,7 +210,7 @@ function Segments() {
           </div>
         </div>
       </section>
-      {/* No WaveDivider needed here — FeaturedCaseStudies also uses bg-cream-50 */}
+      {/* No WaveDivider needed here — FeaturedCaseStudies also uses bg-cream-100 */}
     </div>
   )
 }
@@ -225,7 +225,7 @@ function FeaturedCaseStudies() {
 
   return (
     <div>
-      <section id="realizacje" className="py-20 lg:py-28 bg-cream-50">
+      <section id="realizacje" className="py-20 lg:py-28 bg-cream-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-extrabold font-display text-burgundy-800 mb-4">
@@ -397,7 +397,7 @@ function Numbers() {
 
   return (
     <div>
-      <section className="py-20 lg:py-24 bg-cream-50">
+      <section className="py-20 lg:py-24 bg-cream-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-extrabold font-display text-burgundy-800 text-center mb-14">
             Liczby, które mówią
