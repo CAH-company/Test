@@ -162,7 +162,7 @@ function Segments() {
             {segments.map((seg) => (
               <div
                 key={seg.title}
-                className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-200"
               >
                 {/* Top gradient bar */}
                 <div className="h-1 bg-gradient-to-r from-rose-500 to-burgundy-700" />
@@ -236,7 +236,7 @@ function FeaturedCaseStudies() {
           {/* Main featured */}
           <div className="mb-10">
             <Link href={`/realizacje/${featured[0].slug}`} className="block group">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-gray-200">
                 <div className="grid lg:grid-cols-2">
                   {/* Image — rounded-tl/bl via parent overflow-hidden */}
                   <div className="relative aspect-[16/10] bg-burgundy-100 overflow-hidden">
@@ -286,7 +286,7 @@ function FeaturedCaseStudies() {
           <div className="grid md:grid-cols-2 gap-8">
             {featured.slice(1).map((cs) => (
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
-                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full">
+                <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-gray-200 h-full">
                   <div className="relative aspect-[16/9] bg-burgundy-100 overflow-hidden">
                     <Image
                       src={cs.thumbnailImage}
