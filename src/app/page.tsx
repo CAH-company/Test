@@ -130,8 +130,8 @@ function Segments() {
       icon: <HardHat className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Deweloperska & Budowlana',
       items: ['Integracje po fuzjach', 'Otwarcia inwestycji i biur', 'Pikniki dla pracowników', 'Wigilie firmowe'],
-      caseStudy: 'Cordia — integracja po fuzji',
-      caseStudySlug: 'cordia-integracja',
+      caseStudy: 'NEUCA — 13 lat pikników ogólnopolskich',
+      caseStudySlug: 'neuca-pikniki',
       num: '03',
     },
   ]
@@ -215,7 +215,7 @@ function FeaturedCaseStudies() {
   const featured = [
     caseStudies.find(cs => cs.slug === 'benefit-systems')!,
     caseStudies.find(cs => cs.slug === 'onlybio-wedel')!,
-    caseStudies.find(cs => cs.slug === 'cordia-integracja')!,
+    caseStudies.find(cs => cs.slug === 'neuca-pikniki')!,
   ]
 
   return (
@@ -379,7 +379,7 @@ function USP() {
 function Numbers() {
   const stats = [
     { number: '1 500', label: 'uczestników na 1 evencie', sub: 'Zamek Królewski, Warszawa' },
-    { number: '11', label: 'pikników w 1 miesiąc', sub: 'po ~700 osób każdy' },
+    { number: '35', label: 'pikników w 1 miesiąc', sub: 'po ~700 osób każdy' },
     { number: '14+', label: 'lat na rynku', sub: 'od pierwszego eventu' },
     { number: '8–11', label: 'miast równolegle', sub: 'ogólnopolska skala' },
     { number: '5 000', label: 'gwoździ wbitych', sub: 'na jednym evencie' },
@@ -437,7 +437,7 @@ function VideoSection() {
 /* ─── SECTION 9: CTA / CONTACT ─── */
 const contacts = [
   { name: 'Marta', phone: '+48 503 455 846', email: 'marta@buddys-events.pl' },
-  { name: 'Kasia', phone: '+48 XXX XXX XXX', email: 'kasia@buddys-events.pl' },
+  { name: 'Kasia', phone: '+48 791 939 393', email: 'kasia@buddys-events.pl' },
 ]
 
 function CTASection() {
@@ -450,7 +450,7 @@ function CTASection() {
               Umów się na kawę z&nbsp;Buddym&nbsp;☕
             </h2>
             <p className="text-cream-200 text-lg mb-8">
-              Opowiedz nam o swoim evencie. Bez zobowiązań — po prostu porozmawiajmy.
+              Opowiedz nam o swoim evencie. Bez zobowiązań po prostu porozmawiajmy.
             </p>
 
             <div className="space-y-5 mb-8">
