@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Script from 'next/script'
 import { Sparkles, Building2, HardHat } from 'lucide-react'
 import { caseStudies } from '@/data/caseStudies'
 import { ContactForm } from '@/components/ContactForm'
+import { CalendlyButton } from '@/components/CalendlyButton'
 import { WaveDivider } from '@/components/WaveDivider'
 
 /* ─── SECTION 1: HERO ─── */
@@ -477,23 +477,10 @@ function CTASection() {
               ))}
             </div>
 
-            <ContactForm compact />
+            <CalendlyButton />
           </div>
 
-          {/* Right — Calendly inline */}
-          <div>
-            <p className="text-cream-200 text-sm font-semibold uppercase tracking-widest mb-4">
-              📅 Zarezerwuj termin rozmowy
-            </p>
-            <div className="rounded-2xl overflow-hidden bg-white shadow-lg">
-              <div
-                className="calendly-inline-widget"
-                data-url="https://calendly.com/marta-buddys-events?hide_landing_page_details=1&hide_gdpr_banner=1"
-                style={{ minWidth: '320px', height: '700px' }}
-              />
-            </div>
-            <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
-          </div>
+          <ContactForm compact />
         </div>
       </div>
     </section>
