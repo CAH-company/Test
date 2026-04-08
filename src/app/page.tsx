@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Sparkles, Building2, HardHat } from 'lucide-react'
 import { caseStudies } from '@/data/caseStudies'
 import { ContactForm } from '@/components/ContactForm'
@@ -34,11 +35,14 @@ function Hero() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden">
-                <img
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
+                <Image
                   src="/images/hero.jpg"
                   alt="Buddy's Events — eventy firmowe"
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 0px, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -235,11 +239,13 @@ function FeaturedCaseStudies() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
                 <div className="grid lg:grid-cols-2">
                   {/* Image — rounded-tl/bl via parent overflow-hidden */}
-                  <div className="aspect-[16/10] bg-burgundy-100 overflow-hidden">
-                    <img
+                  <div className="relative aspect-[16/10] bg-burgundy-100 overflow-hidden">
+                    <Image
                       src={featured[0].thumbnailImage}
                       alt={featured[0].title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-8 lg:p-10 flex flex-col justify-center">
@@ -281,11 +287,13 @@ function FeaturedCaseStudies() {
             {featured.slice(1).map((cs) => (
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 h-full">
-                  <div className="aspect-[16/9] bg-burgundy-100 overflow-hidden">
-                    <img
+                  <div className="relative aspect-[16/9] bg-burgundy-100 overflow-hidden">
+                    <Image
                       src={cs.thumbnailImage}
                       alt={cs.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-6">

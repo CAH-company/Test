@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Lightbox from './Lightbox'
 
 interface GalleryProps {
@@ -22,14 +23,16 @@ export default function Gallery({ slug, title, count = 6, imageExt = 'jpg' }: Ga
         {images.map((src, i) => (
           <button
             key={i}
-            className="aspect-[4/3] rounded-xl overflow-hidden bg-burgundy-100 cursor-zoom-in group focus:outline-none focus:ring-2 focus:ring-rose-500"
+            className="relative aspect-[4/3] rounded-xl overflow-hidden bg-burgundy-100 cursor-zoom-in group focus:outline-none focus:ring-2 focus:ring-rose-500"
             onClick={() => setLightboxIndex(i)}
             aria-label={`Otwórz zdjęcie ${i + 1}`}
           >
-            <img
+            <Image
               src={src}
               alt={alts[i]}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </button>
         ))}

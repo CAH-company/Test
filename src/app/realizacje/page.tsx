@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { caseStudies } from '@/data/caseStudies'
 import type { Metadata } from 'next'
 
@@ -40,8 +41,8 @@ export default function RealizacjePage() {
               <Link key={cs.slug} href={`/realizacje/${cs.slug}`} className="block group">
                 <article className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 h-full flex flex-col">
                   {/* Image - explicitly rounded-t-3xl + overflow-hidden */}
-                  <div className="aspect-[16/10] bg-burgundy-100 rounded-t-3xl overflow-hidden">
-                    <img src={cs.thumbnailImage} alt={cs.title} className="w-full h-full object-cover" />
+                  <div className="relative aspect-[16/10] bg-burgundy-100 rounded-t-3xl overflow-hidden">
+                    <Image src={cs.thumbnailImage} alt={cs.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
                   </div>
 
                   <div className="p-6 flex flex-col flex-1">

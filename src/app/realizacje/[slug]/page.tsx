@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { caseStudies, getCaseStudy, getRelatedCaseStudies } from '@/data/caseStudies'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -75,8 +76,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       {/* Hero image */}
       <section className="bg-burgundy-100">
         <div className="max-w-6xl mx-auto">
-          <div className="aspect-[21/9] overflow-hidden">
-            <img src={cs.heroImage} alt={cs.title} className="w-full h-full object-cover" />
+          <div className="relative aspect-[21/9] overflow-hidden">
+            <Image src={cs.heroImage} alt={cs.title} fill priority sizes="100vw" className="object-cover" />
           </div>
         </div>
       </section>
@@ -196,8 +197,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               {related.map((r) => (
                 <Link key={r.slug} href={`/realizacje/${r.slug}`} className="block group">
                   <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
-                    <div className="aspect-[16/9] bg-burgundy-100 overflow-hidden">
-                      <img src={r.thumbnailImage} alt={r.title} className="w-full h-full object-cover" />
+                    <div className="relative aspect-[16/9] bg-burgundy-100 overflow-hidden">
+                      <Image src={r.thumbnailImage} alt={r.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                     </div>
                     <div className="p-6">
                       <h3 className="text-lg font-bold font-display text-burgundy-800 mb-2 group-hover:text-rose-600 transition-colors">
