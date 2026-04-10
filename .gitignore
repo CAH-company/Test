@@ -30,3 +30,6 @@ Thumbs.db
 *.swp
 *.swo
 .vercel
+
+# Local env template — contains no secrets but kept out of repo
+.env.example
