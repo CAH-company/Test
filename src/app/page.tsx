@@ -37,7 +37,7 @@ function Hero() {
             <div className="relative hidden lg:block">
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/hero.jpeg"
                   alt="Buddy's Events — eventy firmowe"
                   fill
                   priority

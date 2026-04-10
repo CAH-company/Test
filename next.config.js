@@ -13,6 +13,10 @@ const securityHeaders = [
 
 const nextConfig = {
   trailingSlash: true,
+  redirects: async () => [
+    { source: '/galeria', destination: '/', permanent: true },
+    { source: '/galeria/', destination: '/', permanent: true },
+  ],
   headers: async () => [
     {
       source: '/(.*)',

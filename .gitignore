@@ -33,3 +33,9 @@ Thumbs.db
 
 # Local env template — contains no secrets but kept out of repo
 .env.example
+
+# Build cache
+tsconfig.tsbuildinfo
+
+# Claude Code memory
+.claude/
