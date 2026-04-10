@@ -180,7 +180,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           <h2 className="text-2xl md:text-3xl font-extrabold font-display mb-4">
             Chcesz podobny efekt dla swojego zespołu?
           </h2>
-          <Link href="/kontakt" className="inline-flex items-center justify-center px-8 py-4 bg-white text-rose-600 font-semibold rounded-xl hover:bg-cream-100 transition-all text-base">
+          <Link href="/#kontakt" className="inline-flex items-center justify-center px-8 py-4 bg-white text-rose-600 font-semibold rounded-xl hover:bg-cream-100 transition-all text-base">
             Umów rozmowę →
           </Link>
         </div>
