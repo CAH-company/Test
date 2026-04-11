@@ -162,7 +162,7 @@ function Segments() {
             {segments.map((seg) => (
               <div
                 key={seg.title}
-                className="group relative bg-white rounded-3xl overflow-hidden card-cream transition-all duration-300 hover:-translate-y-2 border border-gray-200"
+                className="group relative bg-white rounded-3xl overflow-hidden card-cream transition-all duration-300 hover:-translate-y-2 border border-gray-200 flex flex-col"
               >
                 {/* Top gradient bar */}
                 <div className="h-1 bg-gradient-to-r from-rose-500 to-burgundy-700" />
@@ -172,7 +172,7 @@ function Segments() {
                   {seg.num}
                 </div>
 
-                <div className="relative p-8 pt-6">
+                <div className="relative p-8 pt-6 flex flex-col flex-1">
                   {/* Icon bubble */}
                   <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-sm"
                     style={{ background: 'linear-gradient(135deg, #fce7f3 0%, #fdf2f4 100%)' }}>
@@ -184,7 +184,7 @@ function Segments() {
                   </h3>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-8">
+                  <div className="flex flex-wrap gap-2 mb-8 flex-1 content-start">
                     {seg.items.map((item) => (
                       <span
                         key={item}
@@ -197,7 +197,7 @@ function Segments() {
 
                   <Link
                     href={`/realizacje/${seg.caseStudySlug}`}
-                    className="inline-flex items-center gap-2.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors"
+                    className="inline-flex items-center gap-2.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors mt-auto"
                   >
                     <span className="w-8 h-8 rounded-full bg-rose-50 group-hover:bg-rose-100 flex items-center justify-center transition-colors">
                       →
