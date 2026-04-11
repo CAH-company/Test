@@ -11,7 +11,7 @@ export function Footer() {
               <Image src="/logo-buddys-transparent.svg" alt="Buddy's Events" width={120} height={120} />
             </Link>
             <p className="text-cream-300 text-sm leading-relaxed">
-              Agencja eventowa z charakterem. Od koncepcji po rozliczenie — jedna umowa, jeden partner, zero stresu.
+              Agencja eventowa z charakterem. Od koncepcji po rozliczenie, jedna umowa, jeden partner, zero stresu.
             </p>
           </div>
 

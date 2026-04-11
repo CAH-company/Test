@@ -186,7 +186,7 @@ export const caseStudies: CaseStudy[] = [
     prepTime: 'Coroczna produkcja (2011–2023)',
     heroImage: '/images/neuca-pikniki/hero.jpg',
     thumbnailImage: '/images/neuca-pikniki/thumb.jpg',
-    quote: 'Zarządzamy nie eventem, lecz systemem relacji — na dużą skalę, przez lata, bez kompromisów jakościowych.',
+    quote: 'Zarządzamy nie eventem, lecz systemem relacji na dużą skalę, przez lata, bez kompromisów jakościowych.',
     quoteAuthor: "Buddy's Events",
     challenge: 'Ogólnopolski cykl pikników rodzinnych dla kluczowych partnerów biznesowych NEUCA, właścicieli aptek z najwyższymi wynikami sprzedażowymi. Realizowany nieprzerwanie przez kilkanaście lat, 8–11 lokalizacji rocznie. Każda lokalizacja musiała utrzymać najwyższy standard jakości, być spójna wizualnie we wszystkich miastach, a jednocześnie zaskakiwać nową koncepcją kreatywną.',
     solution: 'Hasło przewodnie to „NEUCA: Siła z Relacji". Co roku nowa koncepcja kreatywna i pełne KV z identyczną identyfikacją wizualną we wszystkich lokalizacjach. Ok. 30 osób załogi na każdą lokalizację. Program dla całych rodzin: strefy animatorów, dmuchańce, pokazy magików, 100+ różnych warsztatów na przestrzeni lat, sporty wodne. CSR: warsztaty budowy bud dla psów, edukacja ekologiczna. Prowadzący m.in.: Filip Chajzer, Omenaa Mensah, Olivier Janiak, Piotr Gąsowski, Krzysztof Ibisz.',
