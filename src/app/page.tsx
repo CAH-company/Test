@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Sparkles, Building2, HardHat } from 'lucide-react'
+import { Sparkles, Building2, FlaskConical } from 'lucide-react'
 import { caseStudies } from '@/data/caseStudies'
 import { ContactForm } from '@/components/ContactForm'
 import { CalendlyButton } from '@/components/CalendlyButton'
@@ -132,9 +132,9 @@ function Segments() {
       num: '02',
     },
     {
-      icon: <HardHat className="w-7 h-7 text-rose-600" aria-hidden="true" />,
-      title: 'Deweloperska & Budowlana',
-      items: ['Integracje po fuzjach', 'Otwarcia inwestycji i biur', 'Pikniki dla pracowników', 'Wigilie firmowe'],
+      icon: <FlaskConical className="w-7 h-7 text-rose-600" aria-hidden="true" />,
+      title: 'Farmaceutyczna',
+      items: ['Integracje po fuzjach', 'Pikniki dla pracowników', 'Wigilie firmowe'],
       caseStudy: 'NEUCA — 13 lat pikników ogólnopolskich',
       caseStudySlug: 'neuca-pikniki',
       num: '03',
