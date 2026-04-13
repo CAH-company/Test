@@ -127,7 +127,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               <blockquote className="text-xl lg:text-2xl font-display font-bold leading-snug mb-4">
                 &ldquo;{cs.quote}&rdquo;
               </blockquote>
-              <footer className="text-cream-300 text-sm">— {cs.quoteAuthor}</footer>
+              <footer className="text-cream-300 text-sm">{cs.quoteAuthor}</footer>
             </div>
           )}
 

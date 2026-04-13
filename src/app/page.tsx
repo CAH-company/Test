@@ -127,7 +127,7 @@ function Segments() {
       icon: <Building2 className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Korporacyjna & Biznesowa',
       items: ['Integracje dla 1500+ osób', 'Eventy ogólnofirmowe', 'Konferencje i gale', 'Firmowe wigilie i pikniki'],
-      caseStudy: 'Benefit Systems — 1 500 uczestników',
+      caseStudy: 'Benefit Systems - 1 500 uczestników',
       caseStudySlug: 'benefit-systems',
       num: '02',
     },
@@ -135,7 +135,7 @@ function Segments() {
       icon: <FlaskConical className="w-7 h-7 text-rose-600" aria-hidden="true" />,
       title: 'Farmaceutyczna',
       items: ['Integracje po fuzjach', 'Pikniki dla pracowników', 'Wigilie firmowe'],
-      caseStudy: 'NEUCA — 13 lat pikników ogólnopolskich',
+      caseStudy: 'NEUCA - 13 lat pikników ogólnopolskich',
       caseStudySlug: 'neuca-pikniki',
       num: '03',
     },
@@ -258,12 +258,12 @@ function FeaturedCaseStudies() {
                       </span>
                     </div>
                     <h3 className="text-2xl lg:text-3xl font-extrabold font-display text-burgundy-800 mb-4 group-hover:text-rose-600 transition-colors">
-                      {featured[0].isAnonymous ? featured[0].anonymousLabel : featured[0].client} — {featured[0].attendees} uczestników
+                      {featured[0].isAnonymous ? featured[0].anonymousLabel : featured[0].client} - {featured[0].attendees} uczestników
                     </h3>
                     {featured[0].quote && (
                       <blockquote className="text-gray-600 italic mb-4 border-l-4 border-rose-400 pl-4">
                         &ldquo;{featured[0].quote}&rdquo;
-                        <footer className="text-sm text-gray-500 mt-1 not-italic">— {featured[0].quoteAuthor}</footer>
+                        <footer className="text-sm text-gray-500 mt-1 not-italic">{featured[0].quoteAuthor}</footer>
                       </blockquote>
                     )}
                     <ul className="space-y-1 mb-6">

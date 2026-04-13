@@ -83,7 +83,7 @@ export default function RealizacjePage() {
             Chcesz podobny efekt dla swojej firmy?
           </h2>
           <p className="text-cream-200 mb-8">
-            Opowiedz nam o swoim evencie — przygotujemy koncepcję szytą na miarę.
+            Opowiedz nam o swoim evencie - przygotujemy koncepcję szytą na miarę.
           </p>
           <Link href="/#kontakt" className="btn-primary text-base">
             Umów rozmowę
