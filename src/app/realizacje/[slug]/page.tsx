@@ -110,8 +110,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {cs.highlights.map((h) => (
-                <div key={h} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200">
-                  <span className="text-rose-500 mt-0.5 flex-shrink-0">✦</span>
+                <div key={h} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-200">
+                  <span className="text-rose-500 flex-shrink-0">✦</span>
                   <span className="text-gray-700 text-sm">{h}</span>
                 </div>
               ))}

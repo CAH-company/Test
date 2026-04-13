@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
     highlights: [
       '360 uczestników z całej Polski',
       'Podwieszane meduzy wielkogabarytowe na podnośnikach',
-      'Kurtyna pary wodnej Leia Display z animowanym logo',
+      'Leia Display z animowanym logo',
       'Transformacja sali w kilka godzin między częścią dzienną a wieczorną',
       'Nocne montaże elementów scenograficznych',
       'Koncert Mrozu dobrany do motywu przewodniego',
