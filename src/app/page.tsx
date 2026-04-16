@@ -35,14 +35,17 @@ function Hero() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
+              {/* Glow */}
+              <div className="absolute inset-0 bg-rose-500/15 rounded-full blur-3xl scale-90" />
+              {/* Frame */}
+              <div className="relative aspect-square rounded-3xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-burgundy-950/60 bg-burgundy-800">
                 <Image
                   src="/images/hero.jpeg"
                   alt="Buddy's Events — eventy firmowe"
                   fill
                   priority
                   sizes="(max-width: 1024px) 0px, 50vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>
