@@ -38,7 +38,7 @@ function Hero() {
               {/* Glow */}
               <div className="absolute -inset-4 bg-rose-500/20 rounded-[40px] blur-3xl" />
               {/* Frame */}
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-burgundy-950/60">
+              <div className="relative aspect-[3/4] max-w-[340px] mx-auto rounded-3xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-burgundy-950/60">
                 <Image
                   src="/images/hero.jpg"
                   alt="Buddy — Prezes Buddy's Events"
