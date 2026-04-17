@@ -36,17 +36,19 @@ function Hero() {
 
             <div className="relative hidden lg:block">
               {/* Glow */}
-              <div className="absolute inset-0 bg-rose-500/15 rounded-full blur-3xl scale-90" />
+              <div className="absolute -inset-4 bg-rose-500/20 rounded-[40px] blur-3xl" />
               {/* Frame */}
-              <div className="relative aspect-square rounded-3xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-burgundy-950/60 bg-burgundy-800">
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-burgundy-950/60">
                 <Image
-                  src="/images/hero.jpeg"
-                  alt="Buddy's Events — eventy firmowe"
+                  src="/images/hero.jpg"
+                  alt="Buddy — Prezes Buddy's Events"
                   fill
                   priority
                   sizes="(max-width: 1024px) 0px, 50vw"
-                  className="object-contain"
+                  className="object-cover object-top"
                 />
+                {/* subtle vignette at bottom */}
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-burgundy-900/40 to-transparent pointer-events-none" />
               </div>
             </div>
           </div>
